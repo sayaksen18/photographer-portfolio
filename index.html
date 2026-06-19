@@ -1,0 +1,1148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Alexander Kane — Award-winning photographer specializing in weddings, portraits, fashion, and editorial photography. Book your luxury photography experience today.">
+  <meta name="keywords" content="photographer, photography, wedding photographer, portrait photography, fashion photography, luxury photography, professional photographer">
+  <meta name="author" content="Alexander Kane Photography">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Alexander Kane Photography — Capturing Timeless Moments">
+  <meta property="og:description" content="Award-winning photographer specializing in luxury weddings, editorial portraits, and high-end fashion photography.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://alexanderkane.com">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Alexander Kane Photography">
+  <meta name="twitter:description" content="Award-winning photographer specializing in luxury weddings, editorial portraits, and high-end fashion photography.">
+  <meta name="theme-color" content="#0a0a0a">
+  <title>Alexander Kane Photography — Capturing Timeless Moments</title>
+
+  <!-- Preconnect for performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600&family=Inter:wght@300;400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+
+  <!-- Lenis Smooth Scroll -->
+  <script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js" defer></script>
+</head>
+<body>
+
+  <!-- Preloader -->
+  <div id="preloader" class="preloader" aria-hidden="true">
+    <div class="preloader__inner">
+      <div class="preloader__logo">AK</div>
+      <div class="preloader__bar">
+        <div class="preloader__progress"></div>
+      </div>
+      <div class="preloader__text">Loading Experience</div>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <header class="header" id="header" role="banner">
+    <nav class="nav" aria-label="Main navigation">
+      <a href="#hero" class="nav__logo" aria-label="Alexander Kane Photography — Home">
+        <span class="nav__logo-text">Alexander</span>
+        <span class="nav__logo-accent">Kane</span>
+      </a>
+
+      <ul class="nav__links" id="navLinks" role="menubar">
+        <li role="none"><a href="#portfolio" class="nav__link" role="menuitem">Portfolio</a></li>
+        <li role="none"><a href="#about" class="nav__link" role="menuitem">About</a></li>
+        <li role="none"><a href="#services" class="nav__link" role="menuitem">Services</a></li>
+        <li role="none"><a href="#testimonials" class="nav__link" role="menuitem">Testimonials</a></li>
+        <li role="none"><a href="#process" class="nav__link" role="menuitem">Process</a></li>
+        <li role="none"><a href="#contact" class="nav__link" role="menuitem">Contact</a></li>
+      </ul>
+
+      <div class="nav__actions">
+        <a href="#contact" class="nav__cta">Book Now</a>
+        <button class="nav__toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="nav__toggle-line"></span>
+          <span class="nav__toggle-line"></span>
+          <span class="nav__toggle-line"></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+      <ul class="mobile-menu__links">
+        <li><a href="#portfolio" class="mobile-menu__link">Portfolio</a></li>
+        <li><a href="#about" class="mobile-menu__link">About</a></li>
+        <li><a href="#services" class="mobile-menu__link">Services</a></li>
+        <li><a href="#testimonials" class="mobile-menu__link">Testimonials</a></li>
+        <li><a href="#process" class="mobile-menu__link">Process</a></li>
+        <li><a href="#contact" class="mobile-menu__link">Contact</a></li>
+      </ul>
+      <div class="mobile-menu__footer">
+        <a href="mailto:hello@alexanderkane.com" class="mobile-menu__email">hello@alexanderkane.com</a>
+        <div class="mobile-menu__socials">
+          <a href="#" aria-label="Instagram">IG</a>
+          <a href="#" aria-label="Behance">BE</a>
+          <a href="#" aria-label="Pinterest">PI</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <!-- ==================== HERO ==================== -->
+    <section class="hero" id="hero" aria-label="Hero">
+      <div class="hero__bg">
+        <div class="hero__bg-overlay"></div>
+        <img src="https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?w=1920&q=80&auto=format"
+             alt=""
+             class="hero__bg-img"
+             loading="eager"
+             fetchpriority="high"
+             width="1920" height="1080">
+      </div>
+
+      <div class="hero__content">
+        <div class="hero__badge reveal-up">
+          <span class="hero__badge-dot"></span>
+          Award-Winning Photographer
+        </div>
+
+        <h1 class="hero__title">
+          <span class="hero__title-line reveal-up">Capturing</span>
+          <span class="hero__title-line hero__title-line--italic reveal-up">Timeless</span>
+          <span class="hero__title-line reveal-up">Moments</span>
+        </h1>
+
+        <p class="hero__subtitle reveal-up">
+          I craft visual stories that transcend time — blending artistry with emotion
+          to create photographs you'll treasure for generations.
+        </p>
+
+        <div class="hero__actions reveal-up">
+          <a href="#portfolio" class="btn btn--primary" id="hero-cta-portfolio">
+            <span>View Portfolio</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a href="#contact" class="btn btn--outline" id="hero-cta-contact">
+            <span>Contact Me</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero__scroll" aria-hidden="true">
+        <div class="hero__scroll-line"></div>
+        <span class="hero__scroll-text">Scroll to Explore</span>
+      </div>
+
+      <div class="hero__meta">
+        <div class="hero__meta-item reveal-up">
+          <span class="hero__meta-number">12+</span>
+          <span class="hero__meta-label">Years</span>
+        </div>
+        <div class="hero__meta-item reveal-up">
+          <span class="hero__meta-number">500+</span>
+          <span class="hero__meta-label">Projects</span>
+        </div>
+        <div class="hero__meta-item reveal-up">
+          <span class="hero__meta-number">30+</span>
+          <span class="hero__meta-label">Awards</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== PORTFOLIO ==================== -->
+    <section class="portfolio section" id="portfolio" aria-labelledby="portfolio-heading">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__tag reveal-up">Selected Works</span>
+          <h2 class="section__title reveal-up" id="portfolio-heading">
+            Visual <em>Stories</em>
+          </h2>
+          <p class="section__desc reveal-up">
+            Each photograph is a carefully composed narrative — a frozen moment
+            that speaks volumes about the beauty of human experience.
+          </p>
+        </div>
+
+        <!-- Portfolio Filters -->
+        <div class="portfolio__filters reveal-up" role="tablist" aria-label="Portfolio categories">
+          <button class="portfolio__filter active" data-filter="all" role="tab" aria-selected="true" id="filter-all">All</button>
+          <button class="portfolio__filter" data-filter="weddings" role="tab" aria-selected="false" id="filter-weddings">Weddings</button>
+          <button class="portfolio__filter" data-filter="portraits" role="tab" aria-selected="false" id="filter-portraits">Portraits</button>
+          <button class="portfolio__filter" data-filter="fashion" role="tab" aria-selected="false" id="filter-fashion">Fashion</button>
+          <button class="portfolio__filter" data-filter="travel" role="tab" aria-selected="false" id="filter-travel">Travel</button>
+          <button class="portfolio__filter" data-filter="wildlife" role="tab" aria-selected="false" id="filter-wildlife">Wildlife</button>
+          <button class="portfolio__filter" data-filter="commercial" role="tab" aria-selected="false" id="filter-commercial">Commercial</button>
+        </div>
+
+        <!-- Portfolio Grid -->
+        <div class="portfolio__grid" id="portfolioGrid" role="tabpanel">
+          <!-- Weddings -->
+          <div class="portfolio__item" data-category="weddings" data-size="large">
+            <div class="portfolio__item-img">
+              <img src="https://images.unsplash.com/photo-1519741497674-611481863552?w=800&q=75&auto=format"
+                   alt="Elegant wedding ceremony in golden hour light"
+                   loading="lazy" width="800" height="1000">
+            </div>
+            <div class="portfolio__item-overlay">
+              <span class="portfolio__item-cat">Weddings</span>
+              <h3 class="portfolio__item-title">Eternal Vows</h3>
+              <p class="portfolio__item-desc">Tuscany, Italy</p>
+            </div>
+          </div>
+
+          <div class="portfolio__item" data-category="portraits" data-size="small">
+            <div class="portfolio__item-img">
+              <img src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=600&q=75&auto=format"
+                   alt="Artistic portrait with dramatic studio lighting"
+                   loading="lazy" width="600" height="750">
+            </div>
+            <div class="portfolio__item-overlay">
+              <span class="portfolio__item-cat">Portraits</span>
+              <h3 class="portfolio__item-title">Inner Light</h3>
+              <p class="portfolio__item-desc">Studio Session</p>
+            </div>
+          </div>
+
+          <div class="portfolio__item" data-category="fashion" data-size="small">
+            <div class="portfolio__item-img">
+              <img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?w=600&q=75&auto=format"
+                   alt="High fashion editorial shoot in urban setting"
+                   loading="lazy" width="600" height="750">
+            </div>
+            <div class="portfolio__item-overlay">
+              <span class="portfolio__item-cat">Fashion</span>
+              <h3 class="portfolio__item-title">Urban Elegance</h3>
+              <p class="portfolio__item-desc">Vogue Editorial</p>
+            </div>
+          </div>
+
+          <div class="portfolio__item" data-category="travel" data-size="medium">
+            <div class="portfolio__item-img">
+              <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=75&auto=format"
+                   alt="Breathtaking mountain landscape at sunrise"
+                   loading="lazy" width="800" height="600">
+            </div>
+            <div class="portfolio__item-overlay">
+              <span class="portfolio__item-cat">Travel</span>
+              <h3 class="portfolio__item-title">Alpine Dawn</h3>
+              <p class="portfolio__item-desc">Swiss Alps</p>
+            </div>
+          </div>
+
+          <div class="portfolio__item" data-category="wildlife" data-size="small">
+            <div class="portfolio__item-img">
+              <img src="https://images.unsplash.com/photo-1474511320723-9a56873571b7?w=600&q=75&auto=format"
+                   alt="Majestic lion in African savanna"
+                   loading="lazy" width="600" height="750">
+            </div>
+            <div class="portfolio__item-overlay">
+              <span class="portfolio__item-cat">Wildlife</span>
+              <h3 class="portfolio__item-title">King's Gaze</h3>
+              <p class="portfolio__item-desc">Serengeti, Tanzania</p>
+            </div>
+          </div>
+
+          <div class="portfolio__item" data-category="commercial" data-size="medium">
+            <div class="portfolio__item-img">
+              <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=800&q=75&auto=format"
+                   alt="Luxury product photography with elegant lighting"
+                   loading="lazy" width="800" height="600">
+            </div>
+            <div class="portfolio__item-overlay">
+              <span class="portfolio__item-cat">Commercial</span>
+              <h3 class="portfolio__item-title">Brand Story</h3>
+              <p class="portfolio__item-desc">Luxury Branding</p>
+            </div>
+          </div>
+
+          <div class="portfolio__item" data-category="weddings" data-size="small">
+            <div class="portfolio__item-img">
+              <img src="https://images.unsplash.com/photo-1606216794074-735e91aa2c92?w=600&q=75&auto=format"
+                   alt="Romantic wedding details with flowers and rings"
+                   loading="lazy" width="600" height="750">
+            </div>
+            <div class="portfolio__item-overlay">
+              <span class="portfolio__item-cat">Weddings</span>
+              <h3 class="portfolio__item-title">Whispered Promises</h3>
+              <p class="portfolio__item-desc">Santorini, Greece</p>
+            </div>
+          </div>
+
+          <div class="portfolio__item" data-category="portraits" data-size="medium">
+            <div class="portfolio__item-img">
+              <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=800&q=75&auto=format"
+                   alt="Natural beauty portrait in soft window light"
+                   loading="lazy" width="800" height="600">
+            </div>
+            <div class="portfolio__item-overlay">
+              <span class="portfolio__item-cat">Portraits</span>
+              <h3 class="portfolio__item-title">Golden Hour</h3>
+              <p class="portfolio__item-desc">Natural Light Series</p>
+            </div>
+          </div>
+
+          <div class="portfolio__item" data-category="fashion" data-size="large">
+            <div class="portfolio__item-img">
+              <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=800&q=75&auto=format"
+                   alt="Fashion model in avant-garde editorial styling"
+                   loading="lazy" width="800" height="1000">
+            </div>
+            <div class="portfolio__item-overlay">
+              <span class="portfolio__item-cat">Fashion</span>
+              <h3 class="portfolio__item-title">Avant-Garde</h3>
+              <p class="portfolio__item-desc">Harper's Bazaar</p>
+            </div>
+          </div>
+
+          <div class="portfolio__item" data-category="travel" data-size="small">
+            <div class="portfolio__item-img">
+              <img src="https://images.unsplash.com/photo-1493246507139-91e8fad9978e?w=600&q=75&auto=format"
+                   alt="Serene lake with mountain reflections at dawn"
+                   loading="lazy" width="600" height="750">
+            </div>
+            <div class="portfolio__item-overlay">
+              <span class="portfolio__item-cat">Travel</span>
+              <h3 class="portfolio__item-title">Mirror Lake</h3>
+              <p class="portfolio__item-desc">Patagonia</p>
+            </div>
+          </div>
+
+          <div class="portfolio__item" data-category="wildlife" data-size="medium">
+            <div class="portfolio__item-img">
+              <img src="https://images.unsplash.com/photo-1564349683136-77e08dba1ef7?w=800&q=75&auto=format"
+                   alt="Elephant family crossing African plains"
+                   loading="lazy" width="800" height="600">
+            </div>
+            <div class="portfolio__item-overlay">
+              <span class="portfolio__item-cat">Wildlife</span>
+              <h3 class="portfolio__item-title">Family Bonds</h3>
+              <p class="portfolio__item-desc">Masai Mara, Kenya</p>
+            </div>
+          </div>
+
+          <div class="portfolio__item" data-category="commercial" data-size="small">
+            <div class="portfolio__item-img">
+              <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=600&q=75&auto=format"
+                   alt="Minimalist product photography on clean background"
+                   loading="lazy" width="600" height="750">
+            </div>
+            <div class="portfolio__item-overlay">
+              <span class="portfolio__item-cat">Commercial</span>
+              <h3 class="portfolio__item-title">Pure Form</h3>
+              <p class="portfolio__item-desc">Product Campaign</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== ABOUT ==================== -->
+    <section class="about section" id="about" aria-labelledby="about-heading">
+      <div class="container">
+        <div class="about__grid">
+          <div class="about__image reveal-up">
+            <div class="about__image-wrapper">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=700&q=80&auto=format"
+                   alt="Alexander Kane — Professional photographer portrait"
+                   loading="lazy" width="700" height="900">
+              <div class="about__image-frame"></div>
+            </div>
+            <div class="about__image-badge">
+              <span class="about__image-badge-number">12+</span>
+              <span class="about__image-badge-text">Years of<br>Excellence</span>
+            </div>
+          </div>
+
+          <div class="about__content">
+            <span class="section__tag reveal-up">About Me</span>
+            <h2 class="section__title reveal-up" id="about-heading">
+              The Art of <em>Seeing</em>
+            </h2>
+            <div class="about__text reveal-up">
+              <p>
+                I'm Alexander Kane, a photographer driven by the belief that every moment
+                holds extraordinary beauty — if you know where to look. Over twelve years,
+                I've refined my craft across wedding photography, editorial portraiture,
+                fashion campaigns, and documentary storytelling.
+              </p>
+              <p>
+                My approach blends technical mastery with raw emotional instinct. I don't
+                just capture images; I create visual narratives that resonate deeply with
+                the human experience. From the intimate whisper of a first look to the
+                grandeur of a fashion editorial, every frame is composed with intention.
+              </p>
+              <p>
+                Based in New York, I travel worldwide to work with clients who value
+                artistry, authenticity, and the power of a single photograph to tell
+                an entire story.
+              </p>
+            </div>
+
+            <div class="about__stats reveal-up">
+              <div class="about__stat">
+                <span class="about__stat-number" data-count="12">0</span>
+                <span class="about__stat-plus">+</span>
+                <span class="about__stat-label">Years of Experience</span>
+              </div>
+              <div class="about__stat">
+                <span class="about__stat-number" data-count="500">0</span>
+                <span class="about__stat-plus">+</span>
+                <span class="about__stat-label">Projects Completed</span>
+              </div>
+              <div class="about__stat">
+                <span class="about__stat-number" data-count="350">0</span>
+                <span class="about__stat-plus">+</span>
+                <span class="about__stat-label">Happy Clients</span>
+              </div>
+              <div class="about__stat">
+                <span class="about__stat-number" data-count="30">0</span>
+                <span class="about__stat-plus">+</span>
+                <span class="about__stat-label">Awards Won</span>
+              </div>
+            </div>
+
+            <a href="#contact" class="btn btn--primary reveal-up" id="about-cta">
+              <span>Let's Work Together</span>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SERVICES ==================== -->
+    <section class="services section" id="services" aria-labelledby="services-heading">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__tag reveal-up">What I Offer</span>
+          <h2 class="section__title reveal-up" id="services-heading">
+            Premium <em>Services</em>
+          </h2>
+          <p class="section__desc reveal-up">
+            Tailored photography experiences designed to exceed your expectations.
+            Every package is customized to your unique vision and needs.
+          </p>
+        </div>
+
+        <div class="services__grid">
+          <article class="service-card reveal-up" id="service-wedding">
+            <div class="service-card__icon">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+            </div>
+            <h3 class="service-card__title">Wedding Photography</h3>
+            <p class="service-card__desc">
+              Complete wedding day coverage with a cinematic approach.
+              From preparations to the last dance, every moment captured with artistry.
+            </p>
+            <div class="service-card__price">
+              <span class="service-card__price-from">Starting from</span>
+              <span class="service-card__price-amount">$3,500</span>
+            </div>
+            <a href="#contact" class="service-card__link">
+              Learn More
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </article>
+
+          <article class="service-card reveal-up" id="service-portrait">
+            <div class="service-card__icon">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+            </div>
+            <h3 class="service-card__title">Portrait Sessions</h3>
+            <p class="service-card__desc">
+              Professional portraits that reveal your authentic self.
+              Studio or location-based sessions with expert lighting and direction.
+            </p>
+            <div class="service-card__price">
+              <span class="service-card__price-from">Starting from</span>
+              <span class="service-card__price-amount">$800</span>
+            </div>
+            <a href="#contact" class="service-card__link">
+              Learn More
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </article>
+
+          <article class="service-card reveal-up" id="service-fashion">
+            <div class="service-card__icon">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </div>
+            <h3 class="service-card__title">Fashion & Editorial</h3>
+            <p class="service-card__desc">
+              High-impact fashion and editorial photography for brands,
+              magazines, and creative directors seeking visual excellence.
+            </p>
+            <div class="service-card__price">
+              <span class="service-card__price-from">Starting from</span>
+              <span class="service-card__price-amount">$2,500</span>
+            </div>
+            <a href="#contact" class="service-card__link">
+              Learn More
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </article>
+
+          <article class="service-card reveal-up" id="service-commercial">
+            <div class="service-card__icon">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+            </div>
+            <h3 class="service-card__title">Commercial & Product</h3>
+            <p class="service-card__desc">
+              Elevate your brand with stunning product and commercial photography.
+              E-commerce, advertising, and lifestyle imagery that sells.
+            </p>
+            <div class="service-card__price">
+              <span class="service-card__price-from">Starting from</span>
+              <span class="service-card__price-amount">$1,500</span>
+            </div>
+            <a href="#contact" class="service-card__link">
+              Learn More
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </article>
+
+          <article class="service-card reveal-up" id="service-event">
+            <div class="service-card__icon">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+            </div>
+            <h3 class="service-card__title">Event Coverage</h3>
+            <p class="service-card__desc">
+              Comprehensive event documentation for corporate galas,
+              launches, and private celebrations. Discreet, professional, impactful.
+            </p>
+            <div class="service-card__price">
+              <span class="service-card__price-from">Starting from</span>
+              <span class="service-card__price-amount">$2,000</span>
+            </div>
+            <a href="#contact" class="service-card__link">
+              Learn More
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </article>
+
+          <article class="service-card reveal-up" id="service-fineart">
+            <div class="service-card__icon">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><path d="M2 2l7.586 7.586"/><circle cx="11" cy="11" r="2"/></svg>
+            </div>
+            <h3 class="service-card__title">Fine Art Photography</h3>
+            <p class="service-card__desc">
+              Limited-edition fine art prints for collectors and interior designers.
+              Museum-quality pieces that transform spaces.
+            </p>
+            <div class="service-card__price">
+              <span class="service-card__price-from">Starting from</span>
+              <span class="service-card__price-amount">$1,200</span>
+            </div>
+            <a href="#contact" class="service-card__link">
+              Learn More
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== TESTIMONIALS ==================== -->
+    <section class="testimonials section" id="testimonials" aria-labelledby="testimonials-heading">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__tag reveal-up">Client Love</span>
+          <h2 class="section__title reveal-up" id="testimonials-heading">
+            Words That <em>Matter</em>
+          </h2>
+          <p class="section__desc reveal-up">
+            The greatest compliment is a client who returns, and refers friends.
+          </p>
+        </div>
+
+        <div class="testimonials__carousel" id="testimonialCarousel">
+          <div class="testimonials__track" id="testimonialTrack">
+            <!-- Testimonial 1 -->
+            <div class="testimonial-card" id="testimonial-1">
+              <div class="testimonial-card__stars" aria-label="5 out of 5 stars">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              </div>
+              <blockquote class="testimonial-card__quote">
+                "Alexander captured our wedding with such artistry that every time we look at our photos,
+                we're transported back to that magical day. His attention to detail is extraordinary."
+              </blockquote>
+              <div class="testimonial-card__author">
+                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&q=75&auto=format"
+                     alt="Sarah & Michael Johnson"
+                     loading="lazy" width="60" height="60"
+                     class="testimonial-card__avatar">
+                <div class="testimonial-card__info">
+                  <span class="testimonial-card__name">Sarah & Michael Johnson</span>
+                  <span class="testimonial-card__event">Tuscany Wedding, 2024</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Testimonial 2 -->
+            <div class="testimonial-card" id="testimonial-2">
+              <div class="testimonial-card__stars" aria-label="5 out of 5 stars">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              </div>
+              <blockquote class="testimonial-card__quote">
+                "Working with Alexander for our brand campaign was transformative. He understood
+                our vision immediately and elevated it beyond what we imagined. The images drove
+                a 40% increase in engagement."
+              </blockquote>
+              <div class="testimonial-card__author">
+                <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&q=75&auto=format"
+                     alt="David Chen"
+                     loading="lazy" width="60" height="60"
+                     class="testimonial-card__avatar">
+                <div class="testimonial-card__info">
+                  <span class="testimonial-card__name">David Chen</span>
+                  <span class="testimonial-card__event">Creative Director, Luxe Brand</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Testimonial 3 -->
+            <div class="testimonial-card" id="testimonial-3">
+              <div class="testimonial-card__stars" aria-label="5 out of 5 stars">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              </div>
+              <blockquote class="testimonial-card__quote">
+                "I've worked with many photographers, but Alexander has an eye unlike anyone else.
+                His fashion editorial work is on another level — each image tells a powerful story.
+                He's now our go-to for every campaign."
+              </blockquote>
+              <div class="testimonial-card__author">
+                <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=100&q=75&auto=format"
+                     alt="Emma Rodriguez"
+                     loading="lazy" width="60" height="60"
+                     class="testimonial-card__avatar">
+                <div class="testimonial-card__info">
+                  <span class="testimonial-card__name">Emma Rodriguez</span>
+                  <span class="testimonial-card__event">Fashion Editor, Vogue Italia</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Testimonial 4 -->
+            <div class="testimonial-card" id="testimonial-4">
+              <div class="testimonial-card__stars" aria-label="5 out of 5 stars">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              </div>
+              <blockquote class="testimonial-card__quote">
+                "From our initial consultation to receiving the final gallery, every step
+                was seamless. Alexander made us feel so comfortable and the resulting photographs
+                are absolutely breathtaking. Worth every penny."
+              </blockquote>
+              <div class="testimonial-card__author">
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&q=75&auto=format"
+                     alt="James & Lisa Park"
+                     loading="lazy" width="60" height="60"
+                     class="testimonial-card__avatar">
+                <div class="testimonial-card__info">
+                  <span class="testimonial-card__name">James & Lisa Park</span>
+                  <span class="testimonial-card__event">Engagement Session, NYC</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonials__controls">
+            <button class="testimonials__btn testimonials__btn--prev" id="testimonialPrev" aria-label="Previous testimonial">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+            </button>
+            <div class="testimonials__dots" id="testimonialDots" role="tablist" aria-label="Testimonial navigation">
+              <button class="testimonials__dot active" data-index="0" role="tab" aria-selected="true" aria-label="Testimonial 1"></button>
+              <button class="testimonials__dot" data-index="1" role="tab" aria-selected="false" aria-label="Testimonial 2"></button>
+              <button class="testimonials__dot" data-index="2" role="tab" aria-selected="false" aria-label="Testimonial 3"></button>
+              <button class="testimonials__dot" data-index="3" role="tab" aria-selected="false" aria-label="Testimonial 4"></button>
+            </div>
+            <button class="testimonials__btn testimonials__btn--next" id="testimonialNext" aria-label="Next testimonial">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== AWARDS ==================== -->
+    <section class="awards section" id="awards" aria-labelledby="awards-heading">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__tag reveal-up">Recognition</span>
+          <h2 class="section__title reveal-up" id="awards-heading">
+            Awards & <em>Features</em>
+          </h2>
+        </div>
+
+        <div class="awards__grid">
+          <div class="award-card reveal-up">
+            <div class="award-card__year">2025</div>
+            <div class="award-card__content">
+              <h3 class="award-card__title">International Photography Awards</h3>
+              <p class="award-card__desc">Gold — Wedding Category</p>
+            </div>
+            <div class="award-card__icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89l1.523 8.11-5-3-5 3 1.523-8.11"/></svg>
+            </div>
+          </div>
+
+          <div class="award-card reveal-up">
+            <div class="award-card__year">2024</div>
+            <div class="award-card__content">
+              <h3 class="award-card__title">Vogue Italia</h3>
+              <p class="award-card__desc">Featured Photographer — Spring Issue</p>
+            </div>
+            <div class="award-card__icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+            </div>
+          </div>
+
+          <div class="award-card reveal-up">
+            <div class="award-card__year">2024</div>
+            <div class="award-card__content">
+              <h3 class="award-card__title">Sony World Photography Awards</h3>
+              <p class="award-card__desc">Shortlisted — Portraiture</p>
+            </div>
+            <div class="award-card__icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89l1.523 8.11-5-3-5 3 1.523-8.11"/></svg>
+            </div>
+          </div>
+
+          <div class="award-card reveal-up">
+            <div class="award-card__year">2023</div>
+            <div class="award-card__content">
+              <h3 class="award-card__title">National Geographic</h3>
+              <p class="award-card__desc">Travel Photography Feature</p>
+            </div>
+            <div class="award-card__icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+            </div>
+          </div>
+
+          <div class="award-card reveal-up">
+            <div class="award-card__year">2023</div>
+            <div class="award-card__content">
+              <h3 class="award-card__title">WPPI — Wedding & Portrait</h3>
+              <p class="award-card__desc">First Place — Creative Vision</p>
+            </div>
+            <div class="award-card__icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89l1.523 8.11-5-3-5 3 1.523-8.11"/></svg>
+            </div>
+          </div>
+
+          <div class="award-card reveal-up">
+            <div class="award-card__year">2022</div>
+            <div class="award-card__content">
+              <h3 class="award-card__title">Harper's Bazaar</h3>
+              <p class="award-card__desc">Editorial Cover Shoot — December Issue</p>
+            </div>
+            <div class="award-card__icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== PROCESS ==================== -->
+    <section class="process section" id="process" aria-labelledby="process-heading">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__tag reveal-up">How It Works</span>
+          <h2 class="section__title reveal-up" id="process-heading">
+            The <em>Journey</em>
+          </h2>
+          <p class="section__desc reveal-up">
+            From our first conversation to the final delivery, every step is crafted
+            to ensure a seamless and extraordinary experience.
+          </p>
+        </div>
+
+        <div class="process__timeline">
+          <div class="process__line" aria-hidden="true">
+            <div class="process__line-fill" id="processLineFill"></div>
+          </div>
+
+          <div class="process__step reveal-up" id="process-step-1">
+            <div class="process__step-number">01</div>
+            <div class="process__step-content">
+              <h3 class="process__step-title">Consultation</h3>
+              <p class="process__step-desc">
+                We begin with a personal conversation to understand your vision,
+                style preferences, and the story you want to tell.
+              </p>
+            </div>
+            <div class="process__step-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            </div>
+          </div>
+
+          <div class="process__step reveal-up" id="process-step-2">
+            <div class="process__step-number">02</div>
+            <div class="process__step-content">
+              <h3 class="process__step-title">Planning</h3>
+              <p class="process__step-desc">
+                Together, we design a detailed shot list, scout locations,
+                coordinate styling, and create a timeline for your session.
+              </p>
+            </div>
+            <div class="process__step-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            </div>
+          </div>
+
+          <div class="process__step reveal-up" id="process-step-3">
+            <div class="process__step-number">03</div>
+            <div class="process__step-content">
+              <h3 class="process__step-title">The Session</h3>
+              <p class="process__step-desc">
+                This is where the magic happens. I guide you naturally through
+                the session, capturing authentic moments and stunning compositions.
+              </p>
+            </div>
+            <div class="process__step-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+            </div>
+          </div>
+
+          <div class="process__step reveal-up" id="process-step-4">
+            <div class="process__step-number">04</div>
+            <div class="process__step-content">
+              <h3 class="process__step-title">Editing & Curation</h3>
+              <p class="process__step-desc">
+                Each image is meticulously edited and color-graded to achieve
+                a cinematic, timeless aesthetic unique to your story.
+              </p>
+            </div>
+            <div class="process__step-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
+            </div>
+          </div>
+
+          <div class="process__step reveal-up" id="process-step-5">
+            <div class="process__step-number">05</div>
+            <div class="process__step-content">
+              <h3 class="process__step-title">Delivery</h3>
+              <p class="process__step-desc">
+                Your final gallery is delivered through a beautiful online portal.
+                Premium prints and albums are available upon request.
+              </p>
+            </div>
+            <div class="process__step-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><polyline points="20 12 20 22 4 22 4 12"/><rect x="2" y="7" width="20" height="5"/><line x1="12" y1="22" x2="12" y2="7"/><path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z"/><path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"/></svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== INSTAGRAM ==================== -->
+    <section class="instagram section" id="instagram" aria-labelledby="instagram-heading">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__tag reveal-up">Follow Along</span>
+          <h2 class="section__title reveal-up" id="instagram-heading">
+            @alexander<em>kane</em>
+          </h2>
+          <p class="section__desc reveal-up">
+            Behind the scenes, recent work, and daily inspiration on Instagram.
+          </p>
+        </div>
+      </div>
+
+      <div class="instagram__grid">
+        <a href="#" class="instagram__item reveal-up" aria-label="Instagram post — Street photography in Paris">
+          <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=400&q=75&auto=format"
+               alt="Street photography in Paris"
+               loading="lazy" width="400" height="400">
+          <div class="instagram__overlay">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </div>
+        </a>
+        <a href="#" class="instagram__item reveal-up" aria-label="Instagram post — Mountain sunrise landscape">
+          <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=400&q=75&auto=format"
+               alt="Mountain sunrise landscape"
+               loading="lazy" width="400" height="400">
+          <div class="instagram__overlay">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </div>
+        </a>
+        <a href="#" class="instagram__item reveal-up" aria-label="Instagram post — Portrait in natural light">
+          <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?w=400&q=75&auto=format"
+               alt="Portrait in natural light"
+               loading="lazy" width="400" height="400">
+          <div class="instagram__overlay">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </div>
+        </a>
+        <a href="#" class="instagram__item reveal-up" aria-label="Instagram post — Wedding bouquet details">
+          <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=400&q=75&auto=format"
+               alt="Wedding bouquet details"
+               loading="lazy" width="400" height="400">
+          <div class="instagram__overlay">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </div>
+        </a>
+        <a href="#" class="instagram__item reveal-up" aria-label="Instagram post — Urban architecture abstract">
+          <img src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=400&q=75&auto=format"
+               alt="Urban architecture abstract"
+               loading="lazy" width="400" height="400">
+          <div class="instagram__overlay">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </div>
+        </a>
+        <a href="#" class="instagram__item reveal-up" aria-label="Instagram post — Ocean sunset silhouette">
+          <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=400&q=75&auto=format"
+               alt="Ocean sunset silhouette"
+               loading="lazy" width="400" height="400">
+          <div class="instagram__overlay">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- ==================== CONTACT ==================== -->
+    <section class="contact section" id="contact" aria-labelledby="contact-heading">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__tag reveal-up">Get In Touch</span>
+          <h2 class="section__title reveal-up" id="contact-heading">
+            Let's Create <em>Together</em>
+          </h2>
+          <p class="section__desc reveal-up">
+            Ready to tell your story? I'd love to hear about your project.
+            Fill out the form below and I'll get back to you within 24 hours.
+          </p>
+        </div>
+
+        <div class="contact__grid">
+          <form class="contact__form reveal-up" id="contactForm" novalidate>
+            <div class="form__row">
+              <div class="form__group">
+                <label for="contact-name" class="form__label">Full Name *</label>
+                <input type="text" id="contact-name" name="name" class="form__input"
+                       placeholder="Your full name" required autocomplete="name">
+              </div>
+              <div class="form__group">
+                <label for="contact-email" class="form__label">Email Address *</label>
+                <input type="email" id="contact-email" name="email" class="form__input"
+                       placeholder="your@email.com" required autocomplete="email">
+              </div>
+            </div>
+
+            <div class="form__row">
+              <div class="form__group">
+                <label for="contact-phone" class="form__label">Phone Number</label>
+                <input type="tel" id="contact-phone" name="phone" class="form__input"
+                       placeholder="+1 (555) 123-4567" autocomplete="tel">
+              </div>
+              <div class="form__group">
+                <label for="contact-event" class="form__label">Event Type *</label>
+                <select id="contact-event" name="event" class="form__input form__select" required>
+                  <option value="" disabled selected>Select event type</option>
+                  <option value="wedding">Wedding</option>
+                  <option value="portrait">Portrait Session</option>
+                  <option value="fashion">Fashion / Editorial</option>
+                  <option value="commercial">Commercial / Product</option>
+                  <option value="event">Event Coverage</option>
+                  <option value="fineart">Fine Art</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form__group">
+              <label for="contact-budget" class="form__label">Estimated Budget</label>
+              <select id="contact-budget" name="budget" class="form__input form__select">
+                <option value="" disabled selected>Select your budget range</option>
+                <option value="1000-2500">$1,000 — $2,500</option>
+                <option value="2500-5000">$2,500 — $5,000</option>
+                <option value="5000-10000">$5,000 — $10,000</option>
+                <option value="10000+">$10,000+</option>
+              </select>
+            </div>
+
+            <div class="form__group">
+              <label for="contact-message" class="form__label">Your Message *</label>
+              <textarea id="contact-message" name="message" class="form__input form__textarea"
+                        placeholder="Tell me about your vision, event details, and any specific requirements..."
+                        rows="5" required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn--primary btn--full" id="contact-submit">
+              <span>Send Inquiry</span>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            </button>
+            <p class="form__note">I typically respond within 24 hours. For urgent inquiries, please call directly.</p>
+          </form>
+
+          <div class="contact__info reveal-up">
+            <div class="contact__info-card">
+              <h3 class="contact__info-title">Contact Information</h3>
+              <p class="contact__info-text">
+                Feel free to reach out directly. I'm always excited to discuss new projects
+                and creative collaborations.
+              </p>
+
+              <div class="contact__info-items">
+                <div class="contact__info-item">
+                  <div class="contact__info-icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                  </div>
+                  <div>
+                    <span class="contact__info-label">Email</span>
+                    <a href="mailto:hello@alexanderkane.com" class="contact__info-value">hello@alexanderkane.com</a>
+                  </div>
+                </div>
+
+                <div class="contact__info-item">
+                  <div class="contact__info-icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                  </div>
+                  <div>
+                    <span class="contact__info-label">Phone</span>
+                    <a href="tel:+15551234567" class="contact__info-value">+1 (555) 123-4567</a>
+                  </div>
+                </div>
+
+                <div class="contact__info-item">
+                  <div class="contact__info-icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                  </div>
+                  <div>
+                    <span class="contact__info-label">Location</span>
+                    <span class="contact__info-value">New York, NY — Available Worldwide</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="contact__socials">
+                <a href="#" class="contact__social" aria-label="Instagram">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                </a>
+                <a href="#" class="contact__social" aria-label="Behance">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22 7h-7v-2h7v2zm1.726 10c-.442 1.297-2.029 3-5.101 3-3.074 0-5.564-1.729-5.564-5.675 0-3.91 2.325-5.92 5.466-5.92 3.082 0 4.964 1.782 5.375 4.426.078.506.109 1.188.095 2.14h-8.027c.13 3.211 3.483 3.312 4.588 2.029h3.168zm-7.686-4h4.965c-.105-1.547-1.136-2.219-2.477-2.219-1.466 0-2.277.768-2.488 2.219zm-9.574 6.988h-6.466v-14.967h6.953c5.476.081 5.58 5.444 2.72 6.906 3.461 1.26 3.577 8.061-3.207 8.061zm-3.466-8.988h3.584c2.508 0 2.906-3-.312-3h-3.272v3zm3.391 3h-3.391v3.016h3.341c3.055 0 2.868-3.016.05-3.016z"/></svg>
+                </a>
+                <a href="#" class="contact__social" aria-label="Pinterest">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0c-6.627 0-12 5.372-12 12 0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.631-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146 1.124.347 2.317.535 3.554.535 6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z"/></svg>
+                </a>
+                <a href="#" class="contact__social" aria-label="LinkedIn">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer" id="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <a href="#hero" class="footer__logo">
+            <span class="footer__logo-text">Alexander</span>
+            <span class="footer__logo-accent">Kane</span>
+          </a>
+          <p class="footer__tagline">
+            Crafting visual stories that transcend time.
+            Award-winning photography for life's most meaningful moments.
+          </p>
+        </div>
+
+        <div class="footer__links-group">
+          <div class="footer__column">
+            <h4 class="footer__column-title">Quick Links</h4>
+            <ul class="footer__links">
+              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__column">
+            <h4 class="footer__column-title">Services</h4>
+            <ul class="footer__links">
+              <li><a href="#services">Weddings</a></li>
+              <li><a href="#services">Portraits</a></li>
+              <li><a href="#services">Fashion</a></li>
+              <li><a href="#services">Commercial</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__column">
+            <h4 class="footer__column-title">Newsletter</h4>
+            <p class="footer__newsletter-text">Get photography tips, behind-the-scenes stories, and exclusive offers.</p>
+            <form class="footer__newsletter" id="newsletterForm">
+              <input type="email" placeholder="Your email" class="footer__newsletter-input"
+                     aria-label="Email for newsletter" required autocomplete="email" id="newsletter-email">
+              <button type="submit" class="footer__newsletter-btn" aria-label="Subscribe to newsletter" id="newsletter-submit">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__copyright">&copy; 2026 Alexander Kane Photography. All rights reserved.</p>
+        <div class="footer__socials">
+          <a href="#" aria-label="Instagram">Instagram</a>
+          <a href="#" aria-label="Behance">Behance</a>
+          <a href="#" aria-label="Pinterest">Pinterest</a>
+          <a href="#" aria-label="LinkedIn">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image preview" aria-hidden="true">
+    <button class="lightbox__close" id="lightboxClose" aria-label="Close lightbox">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+    <div class="lightbox__content">
+      <img src="" alt="" class="lightbox__img" id="lightboxImg">
+      <div class="lightbox__info" id="lightboxInfo">
+        <span class="lightbox__category"></span>
+        <h3 class="lightbox__title"></h3>
+        <p class="lightbox__desc"></p>
+      </div>
+    </div>
+    <button class="lightbox__nav lightbox__nav--prev" id="lightboxPrev" aria-label="Previous image">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+    </button>
+    <button class="lightbox__nav lightbox__nav--next" id="lightboxNext" aria-label="Next image">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+    </button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
