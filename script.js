@@ -1,5 +1,5 @@
 /* ===================================================================
-   ALEXANDER KANE PHOTOGRAPHY — Premium Portfolio Script
+   SHIRSHAK PAL PHOTOGRAPHY — Premium Portfolio Script
    Vanilla JS with GSAP animations and Lenis smooth scroll
    =================================================================== */
 
