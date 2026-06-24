@@ -55,9 +55,7 @@
       <ul class="nav__links" id="navLinks" role="menubar">
         <li role="none"><a href="#portfolio" class="nav__link" role="menuitem">Portfolio</a></li>
         <li role="none"><a href="#about" class="nav__link" role="menuitem">About</a></li>
-        <li role="none"><a href="#services" class="nav__link" role="menuitem">Services</a></li>
         <li role="none"><a href="#testimonials" class="nav__link" role="menuitem">Testimonials</a></li>
-        <li role="none"><a href="#process" class="nav__link" role="menuitem">Process</a></li>
         <li role="none"><a href="#contact" class="nav__link" role="menuitem">Contact</a></li>
       </ul>
 
@@ -76,9 +74,7 @@
       <ul class="mobile-menu__links">
         <li><a href="#portfolio" class="mobile-menu__link">Portfolio</a></li>
         <li><a href="#about" class="mobile-menu__link">About</a></li>
-        <li><a href="#services" class="mobile-menu__link">Services</a></li>
         <li><a href="#testimonials" class="mobile-menu__link">Testimonials</a></li>
-        <li><a href="#process" class="mobile-menu__link">Process</a></li>
         <li><a href="#contact" class="mobile-menu__link">Contact</a></li>
       </ul>
       <div class="mobile-menu__footer">
@@ -172,53 +168,51 @@
         <!-- Portfolio Filters -->
         <div class="portfolio__filters reveal-up" role="tablist" aria-label="Portfolio categories">
           <button class="portfolio__filter active" data-filter="all" role="tab" aria-selected="true" id="filter-all">All</button>
-          <button class="portfolio__filter" data-filter="weddings" role="tab" aria-selected="false" id="filter-weddings">Weddings</button>
-          <button class="portfolio__filter" data-filter="portraits" role="tab" aria-selected="false" id="filter-portraits">Portraits</button>
-          <button class="portfolio__filter" data-filter="fashion" role="tab" aria-selected="false" id="filter-fashion">Fashion</button>
+          <button class="portfolio__filter" data-filter="street" role="tab" aria-selected="false" id="filter-street">Street</button>
+          <button class="portfolio__filter" data-filter="portrait" role="tab" aria-selected="false" id="filter-portrait">Portrait</button>
+          <button class="portfolio__filter" data-filter="event" role="tab" aria-selected="false" id="filter-event">Event</button>
           <button class="portfolio__filter" data-filter="travel" role="tab" aria-selected="false" id="filter-travel">Travel</button>
-          <button class="portfolio__filter" data-filter="wildlife" role="tab" aria-selected="false" id="filter-wildlife">Wildlife</button>
-          <button class="portfolio__filter" data-filter="commercial" role="tab" aria-selected="false" id="filter-commercial">Commercial</button>
         </div>
 
         <!-- Portfolio Grid -->
         <div class="portfolio__grid" id="portfolioGrid" role="tabpanel">
-          <!-- Weddings -->
-          <div class="portfolio__item" data-category="weddings" data-size="large">
+          
+          <div class="portfolio__item" data-category="street" data-size="large">
             <div class="portfolio__item-img">
-              <img src="https://images.unsplash.com/photo-1519741497674-611481863552?w=800&q=75&auto=format"
-                   alt="Elegant wedding ceremony in golden hour light"
+              <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=800&q=75&auto=format"
+                   alt="Street photography in Paris"
                    loading="lazy" width="800" height="1000">
             </div>
             <div class="portfolio__item-overlay">
-              <span class="portfolio__item-cat">Weddings</span>
-              <h3 class="portfolio__item-title">Eternal Vows</h3>
-              <p class="portfolio__item-desc">Tuscany, Italy</p>
+              <span class="portfolio__item-cat">Street</span>
+              <h3 class="portfolio__item-title">Parisian Nights</h3>
+              <p class="portfolio__item-desc">Paris, France</p>
             </div>
           </div>
 
-          <div class="portfolio__item" data-category="portraits" data-size="small">
+          <div class="portfolio__item" data-category="portrait" data-size="small">
             <div class="portfolio__item-img">
               <img src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=600&q=75&auto=format"
                    alt="Artistic portrait with dramatic studio lighting"
                    loading="lazy" width="600" height="750">
             </div>
             <div class="portfolio__item-overlay">
-              <span class="portfolio__item-cat">Portraits</span>
+              <span class="portfolio__item-cat">Portrait</span>
               <h3 class="portfolio__item-title">Inner Light</h3>
               <p class="portfolio__item-desc">Studio Session</p>
             </div>
           </div>
 
-          <div class="portfolio__item" data-category="fashion" data-size="small">
+          <div class="portfolio__item" data-category="event" data-size="small">
             <div class="portfolio__item-img">
-              <img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?w=600&q=75&auto=format"
-                   alt="High fashion editorial shoot in urban setting"
+              <img src="https://images.unsplash.com/photo-1519741497674-611481863552?w=600&q=75&auto=format"
+                   alt="Elegant event ceremony in golden hour light"
                    loading="lazy" width="600" height="750">
             </div>
             <div class="portfolio__item-overlay">
-              <span class="portfolio__item-cat">Fashion</span>
-              <h3 class="portfolio__item-title">Urban Elegance</h3>
-              <p class="portfolio__item-desc">Vogue Editorial</p>
+              <span class="portfolio__item-cat">Event</span>
+              <h3 class="portfolio__item-title">Golden Celebration</h3>
+              <p class="portfolio__item-desc">Tuscany, Italy</p>
             </div>
           </div>
 
@@ -235,76 +229,50 @@
             </div>
           </div>
 
-          <div class="portfolio__item" data-category="wildlife" data-size="small">
+          <div class="portfolio__item" data-category="street" data-size="small">
             <div class="portfolio__item-img">
-              <img src="https://images.unsplash.com/photo-1474511320723-9a56873571b7?w=600&q=75&auto=format"
-                   alt="Majestic lion in African savanna"
+              <img src="https://images.unsplash.com/photo-1517650862521-d580d5348145?w=600&q=75&auto=format"
+                   alt="Urban street scene at night"
                    loading="lazy" width="600" height="750">
             </div>
             <div class="portfolio__item-overlay">
-              <span class="portfolio__item-cat">Wildlife</span>
-              <h3 class="portfolio__item-title">King's Gaze</h3>
-              <p class="portfolio__item-desc">Serengeti, Tanzania</p>
+              <span class="portfolio__item-cat">Street</span>
+              <h3 class="portfolio__item-title">Neon Shadows</h3>
+              <p class="portfolio__item-desc">Tokyo, Japan</p>
             </div>
           </div>
 
-          <div class="portfolio__item" data-category="commercial" data-size="medium">
+          <div class="portfolio__item" data-category="event" data-size="medium">
             <div class="portfolio__item-img">
-              <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=800&q=75&auto=format"
-                   alt="Luxury product photography with elegant lighting"
+              <img src="https://images.unsplash.com/photo-1606216794074-735e91aa2c92?w=800&q=75&auto=format"
+                   alt="Event details with flowers"
                    loading="lazy" width="800" height="600">
             </div>
             <div class="portfolio__item-overlay">
-              <span class="portfolio__item-cat">Commercial</span>
-              <h3 class="portfolio__item-title">Brand Story</h3>
-              <p class="portfolio__item-desc">Luxury Branding</p>
+              <span class="portfolio__item-cat">Event</span>
+              <h3 class="portfolio__item-title">Elegant Details</h3>
+              <p class="portfolio__item-desc">Gala Dinner</p>
             </div>
           </div>
 
-          <div class="portfolio__item" data-category="weddings" data-size="small">
+          <div class="portfolio__item" data-category="portrait" data-size="small">
             <div class="portfolio__item-img">
-              <img src="https://images.unsplash.com/photo-1606216794074-735e91aa2c92?w=600&q=75&auto=format"
-                   alt="Romantic wedding details with flowers and rings"
-                   loading="lazy" width="600" height="750">
-            </div>
-            <div class="portfolio__item-overlay">
-              <span class="portfolio__item-cat">Weddings</span>
-              <h3 class="portfolio__item-title">Whispered Promises</h3>
-              <p class="portfolio__item-desc">Santorini, Greece</p>
-            </div>
-          </div>
-
-          <div class="portfolio__item" data-category="portraits" data-size="medium">
-            <div class="portfolio__item-img">
-              <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=800&q=75&auto=format"
+              <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=600&q=75&auto=format"
                    alt="Natural beauty portrait in soft window light"
-                   loading="lazy" width="800" height="600">
+                   loading="lazy" width="600" height="750">
             </div>
             <div class="portfolio__item-overlay">
-              <span class="portfolio__item-cat">Portraits</span>
+              <span class="portfolio__item-cat">Portrait</span>
               <h3 class="portfolio__item-title">Golden Hour</h3>
               <p class="portfolio__item-desc">Natural Light Series</p>
             </div>
           </div>
 
-          <div class="portfolio__item" data-category="fashion" data-size="large">
+          <div class="portfolio__item" data-category="travel" data-size="medium">
             <div class="portfolio__item-img">
-              <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=800&q=75&auto=format"
-                   alt="Fashion model in avant-garde editorial styling"
-                   loading="lazy" width="800" height="1000">
-            </div>
-            <div class="portfolio__item-overlay">
-              <span class="portfolio__item-cat">Fashion</span>
-              <h3 class="portfolio__item-title">Avant-Garde</h3>
-              <p class="portfolio__item-desc">Harper's Bazaar</p>
-            </div>
-          </div>
-
-          <div class="portfolio__item" data-category="travel" data-size="small">
-            <div class="portfolio__item-img">
-              <img src="https://images.unsplash.com/photo-1493246507139-91e8fad9978e?w=600&q=75&auto=format"
+              <img src="https://images.unsplash.com/photo-1493246507139-91e8fad9978e?w=800&q=75&auto=format"
                    alt="Serene lake with mountain reflections at dawn"
-                   loading="lazy" width="600" height="750">
+                   loading="lazy" width="800" height="600">
             </div>
             <div class="portfolio__item-overlay">
               <span class="portfolio__item-cat">Travel</span>
@@ -313,31 +281,6 @@
             </div>
           </div>
 
-          <div class="portfolio__item" data-category="wildlife" data-size="medium">
-            <div class="portfolio__item-img">
-              <img src="https://images.unsplash.com/photo-1564349683136-77e08dba1ef7?w=800&q=75&auto=format"
-                   alt="Elephant family crossing African plains"
-                   loading="lazy" width="800" height="600">
-            </div>
-            <div class="portfolio__item-overlay">
-              <span class="portfolio__item-cat">Wildlife</span>
-              <h3 class="portfolio__item-title">Family Bonds</h3>
-              <p class="portfolio__item-desc">Masai Mara, Kenya</p>
-            </div>
-          </div>
-
-          <div class="portfolio__item" data-category="commercial" data-size="small">
-            <div class="portfolio__item-img">
-              <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=600&q=75&auto=format"
-                   alt="Minimalist product photography on clean background"
-                   loading="lazy" width="600" height="750">
-            </div>
-            <div class="portfolio__item-overlay">
-              <span class="portfolio__item-cat">Commercial</span>
-              <h3 class="portfolio__item-title">Pure Form</h3>
-              <p class="portfolio__item-desc">Product Campaign</p>
-            </div>
-          </div>
         </div>
       </div>
     </section>
@@ -412,138 +355,6 @@
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
             </a>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ==================== SERVICES ==================== -->
-    <section class="services section" id="services" aria-labelledby="services-heading">
-      <div class="container">
-        <div class="section__header">
-          <span class="section__tag reveal-up">What I Offer</span>
-          <h2 class="section__title reveal-up" id="services-heading">
-            Premium <em>Services</em>
-          </h2>
-          <p class="section__desc reveal-up">
-            Tailored photography experiences designed to exceed your expectations.
-            Every package is customized to your unique vision and needs.
-          </p>
-        </div>
-
-        <div class="services__grid">
-          <article class="service-card reveal-up" id="service-wedding">
-            <div class="service-card__icon">
-              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
-            </div>
-            <h3 class="service-card__title">Wedding Photography</h3>
-            <p class="service-card__desc">
-              Complete wedding day coverage with a cinematic approach.
-              From preparations to the last dance, every moment captured with artistry.
-            </p>
-            <div class="service-card__price">
-              <span class="service-card__price-from">Starting from</span>
-              <span class="service-card__price-amount">$3,500</span>
-            </div>
-            <a href="#contact" class="service-card__link">
-              Learn More
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-            </a>
-          </article>
-
-          <article class="service-card reveal-up" id="service-portrait">
-            <div class="service-card__icon">
-              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
-            </div>
-            <h3 class="service-card__title">Portrait Sessions</h3>
-            <p class="service-card__desc">
-              Professional portraits that reveal your authentic self.
-              Studio or location-based sessions with expert lighting and direction.
-            </p>
-            <div class="service-card__price">
-              <span class="service-card__price-from">Starting from</span>
-              <span class="service-card__price-amount">$800</span>
-            </div>
-            <a href="#contact" class="service-card__link">
-              Learn More
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-            </a>
-          </article>
-
-          <article class="service-card reveal-up" id="service-fashion">
-            <div class="service-card__icon">
-              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-            </div>
-            <h3 class="service-card__title">Fashion & Editorial</h3>
-            <p class="service-card__desc">
-              High-impact fashion and editorial photography for brands,
-              magazines, and creative directors seeking visual excellence.
-            </p>
-            <div class="service-card__price">
-              <span class="service-card__price-from">Starting from</span>
-              <span class="service-card__price-amount">$2,500</span>
-            </div>
-            <a href="#contact" class="service-card__link">
-              Learn More
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-            </a>
-          </article>
-
-          <article class="service-card reveal-up" id="service-commercial">
-            <div class="service-card__icon">
-              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
-            </div>
-            <h3 class="service-card__title">Commercial & Product</h3>
-            <p class="service-card__desc">
-              Elevate your brand with stunning product and commercial photography.
-              E-commerce, advertising, and lifestyle imagery that sells.
-            </p>
-            <div class="service-card__price">
-              <span class="service-card__price-from">Starting from</span>
-              <span class="service-card__price-amount">$1,500</span>
-            </div>
-            <a href="#contact" class="service-card__link">
-              Learn More
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-            </a>
-          </article>
-
-          <article class="service-card reveal-up" id="service-event">
-            <div class="service-card__icon">
-              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
-            </div>
-            <h3 class="service-card__title">Event Coverage</h3>
-            <p class="service-card__desc">
-              Comprehensive event documentation for corporate galas,
-              launches, and private celebrations. Discreet, professional, impactful.
-            </p>
-            <div class="service-card__price">
-              <span class="service-card__price-from">Starting from</span>
-              <span class="service-card__price-amount">$2,000</span>
-            </div>
-            <a href="#contact" class="service-card__link">
-              Learn More
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-            </a>
-          </article>
-
-          <article class="service-card reveal-up" id="service-fineart">
-            <div class="service-card__icon">
-              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><path d="M2 2l7.586 7.586"/><circle cx="11" cy="11" r="2"/></svg>
-            </div>
-            <h3 class="service-card__title">Fine Art Photography</h3>
-            <p class="service-card__desc">
-              Limited-edition fine art prints for collectors and interior designers.
-              Museum-quality pieces that transform spaces.
-            </p>
-            <div class="service-card__price">
-              <span class="service-card__price-from">Starting from</span>
-              <span class="service-card__price-amount">$1,200</span>
-            </div>
-            <a href="#contact" class="service-card__link">
-              Learn More
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-            </a>
-          </article>
         </div>
       </div>
     </section>
@@ -759,98 +570,6 @@
             </div>
             <div class="award-card__icon">
               <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ==================== PROCESS ==================== -->
-    <section class="process section" id="process" aria-labelledby="process-heading">
-      <div class="container">
-        <div class="section__header">
-          <span class="section__tag reveal-up">How It Works</span>
-          <h2 class="section__title reveal-up" id="process-heading">
-            The <em>Journey</em>
-          </h2>
-          <p class="section__desc reveal-up">
-            From our first conversation to the final delivery, every step is crafted
-            to ensure a seamless and extraordinary experience.
-          </p>
-        </div>
-
-        <div class="process__timeline">
-          <div class="process__line" aria-hidden="true">
-            <div class="process__line-fill" id="processLineFill"></div>
-          </div>
-
-          <div class="process__step reveal-up" id="process-step-1">
-            <div class="process__step-number">01</div>
-            <div class="process__step-content">
-              <h3 class="process__step-title">Consultation</h3>
-              <p class="process__step-desc">
-                We begin with a personal conversation to understand your vision,
-                style preferences, and the story you want to tell.
-              </p>
-            </div>
-            <div class="process__step-icon">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
-            </div>
-          </div>
-
-          <div class="process__step reveal-up" id="process-step-2">
-            <div class="process__step-number">02</div>
-            <div class="process__step-content">
-              <h3 class="process__step-title">Planning</h3>
-              <p class="process__step-desc">
-                Together, we design a detailed shot list, scout locations,
-                coordinate styling, and create a timeline for your session.
-              </p>
-            </div>
-            <div class="process__step-icon">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-            </div>
-          </div>
-
-          <div class="process__step reveal-up" id="process-step-3">
-            <div class="process__step-number">03</div>
-            <div class="process__step-content">
-              <h3 class="process__step-title">The Session</h3>
-              <p class="process__step-desc">
-                This is where the magic happens. I guide you naturally through
-                the session, capturing authentic moments and stunning compositions.
-              </p>
-            </div>
-            <div class="process__step-icon">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
-            </div>
-          </div>
-
-          <div class="process__step reveal-up" id="process-step-4">
-            <div class="process__step-number">04</div>
-            <div class="process__step-content">
-              <h3 class="process__step-title">Editing & Curation</h3>
-              <p class="process__step-desc">
-                Each image is meticulously edited and color-graded to achieve
-                a cinematic, timeless aesthetic unique to your story.
-              </p>
-            </div>
-            <div class="process__step-icon">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
-            </div>
-          </div>
-
-          <div class="process__step reveal-up" id="process-step-5">
-            <div class="process__step-number">05</div>
-            <div class="process__step-content">
-              <h3 class="process__step-title">Delivery</h3>
-              <p class="process__step-desc">
-                Your final gallery is delivered through a beautiful online portal.
-                Premium prints and albums are available upon request.
-              </p>
-            </div>
-            <div class="process__step-icon">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><polyline points="20 12 20 22 4 22 4 12"/><rect x="2" y="7" width="20" height="5"/><line x1="12" y1="22" x2="12" y2="7"/><path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z"/><path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"/></svg>
             </div>
           </div>
         </div>
@@ -1081,18 +800,7 @@
             <ul class="footer__links">
               <li><a href="#portfolio">Portfolio</a></li>
               <li><a href="#about">About</a></li>
-              <li><a href="#services">Services</a></li>
               <li><a href="#contact">Contact</a></li>
-            </ul>
-          </div>
-
-          <div class="footer__column">
-            <h4 class="footer__column-title">Services</h4>
-            <ul class="footer__links">
-              <li><a href="#services">Weddings</a></li>
-              <li><a href="#services">Portraits</a></li>
-              <li><a href="#services">Fashion</a></li>
-              <li><a href="#services">Commercial</a></li>
             </ul>
           </div>
 

@@ -561,7 +561,6 @@ const AnimationController = {
     gsap.registerPlugin(ScrollTrigger);
 
     this.setupParallax();
-    this.setupProcessTimeline();
     this.setupPortfolioReveal();
   },
 
@@ -614,22 +613,6 @@ const AnimationController = {
         trigger: '.hero',
         start: 'top top',
         end: 'bottom top',
-        scrub: 1
-      }
-    });
-  },
-
-  setupProcessTimeline() {
-    const fill = document.getElementById('processLineFill');
-    if (!fill) return;
-
-    gsap.to(fill, {
-      height: '100%',
-      ease: 'none',
-      scrollTrigger: {
-        trigger: '.process__timeline',
-        start: 'top 60%',
-        end: 'bottom 60%',
         scrub: 1
       }
     });
