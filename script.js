@@ -224,23 +224,62 @@ const Portfolio = {
   grid: null,
   items: null,
   filters: null,
+  viewAllBtn: null,
+  viewAllContainer: null,
   currentFilter: 'all',
+  visibleLimit: 12,
+  isExpanded: false,
 
   init() {
     this.grid = document.getElementById('portfolioGrid');
     if (!this.grid) return;
 
+    // Randomize items in the DOM
+    let rawItems = Array.from(this.grid.querySelectorAll('.portfolio__item'));
+    for (let i = rawItems.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [rawItems[i], rawItems[j]] = [rawItems[j], rawItems[i]];
+    }
+    rawItems.forEach(item => this.grid.appendChild(item));
+
     this.items = this.grid.querySelectorAll('.portfolio__item');
     this.filters = document.querySelectorAll('.portfolio__filter');
+    this.viewAllBtn = document.getElementById('portfolioViewAllBtn');
+    this.viewLessBtn = document.getElementById('portfolioViewLessBtn');
+    this.viewAllContainer = document.getElementById('portfolioViewAllContainer');
 
     // Filter click handlers
     this.filters.forEach(btn => {
       btn.addEventListener('click', () => {
         const filter = btn.dataset.filter;
+        this.isExpanded = false;
         this.filterItems(filter);
         this.updateActiveFilter(btn);
       });
     });
+
+    if (this.viewAllBtn) {
+      this.viewAllBtn.addEventListener('click', () => {
+        this.isExpanded = true;
+        this.filterItems(this.currentFilter);
+      });
+    }
+
+    if (this.viewLessBtn) {
+      this.viewLessBtn.addEventListener('click', () => {
+        this.isExpanded = false;
+        this.filterItems(this.currentFilter);
+        
+        // Scroll back to top of portfolio section
+        const headerHeight = document.getElementById('header')?.offsetHeight || 80;
+        const targetTop = this.grid.getBoundingClientRect().top + window.scrollY - headerHeight - 40;
+        if (typeof SmoothScroll !== 'undefined' && SmoothScroll.instance) {
+          SmoothScroll.instance.scrollTo(targetTop, { duration: 0.8 });
+        } else {
+          window.scrollTo({ top: targetTop, behavior: 'smooth' });
+        }
+      });
+    }
 
     // Lightbox click
     this.items.forEach((item, index) => {
@@ -258,30 +297,64 @@ const Portfolio = {
         }
       });
     });
+    
+    // Initial filter apply to enforce limit on load
+    this.filterItems('all');
   },
 
   filterItems(category) {
     this.currentFilter = category;
+    let matchCount = 0;
 
     this.items.forEach(item => {
       const itemCategory = item.dataset.category;
-      const shouldShow = category === 'all' || itemCategory === category;
+      let shouldShow = category === 'all' || itemCategory === category;
 
       if (shouldShow) {
-        item.classList.remove('hidden');
-        item.style.opacity = '0';
-        item.style.transform = 'scale(0.9)';
-        requestAnimationFrame(() => {
-          item.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
-          item.style.opacity = '1';
-          item.style.transform = 'scale(1)';
-        });
+        matchCount++;
+        if (!this.isExpanded && matchCount > this.visibleLimit) {
+          shouldShow = false;
+        }
+      }
+
+      if (shouldShow) {
+        if (item.classList.contains('hidden')) {
+          item.classList.remove('hidden');
+          item.style.opacity = '0';
+          item.style.transform = 'scale(0.9)';
+          requestAnimationFrame(() => {
+            item.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+            item.style.opacity = '1';
+            item.style.transform = 'scale(1)';
+          });
+        } else {
+            // Already visible, ensure opacity and scale are correct just in case
+            item.style.opacity = '1';
+            item.style.transform = 'scale(1)';
+        }
       } else {
-        item.style.opacity = '0';
-        item.style.transform = 'scale(0.9)';
-        setTimeout(() => item.classList.add('hidden'), 400);
+        if (!item.classList.contains('hidden')) {
+          item.style.opacity = '0';
+          item.style.transform = 'scale(0.9)';
+          setTimeout(() => item.classList.add('hidden'), 400);
+        }
       }
     });
+
+    if (this.viewAllContainer) {
+      if (matchCount > this.visibleLimit) {
+        this.viewAllContainer.style.display = 'flex';
+        if (this.isExpanded) {
+          if (this.viewAllBtn) this.viewAllBtn.style.display = 'none';
+          if (this.viewLessBtn) this.viewLessBtn.style.display = 'inline-flex';
+        } else {
+          if (this.viewAllBtn) this.viewAllBtn.style.display = 'inline-flex';
+          if (this.viewLessBtn) this.viewLessBtn.style.display = 'none';
+        }
+      } else {
+        this.viewAllContainer.style.display = 'none';
+      }
+    }
   },
 
   updateActiveFilter(activeBtn) {
