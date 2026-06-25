@@ -20,6 +20,7 @@
   <!-- Preconnect for performance -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="image" href="https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?w=1920&q=80&auto=format">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600&family=Inter:wght@300;400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="style.css">
@@ -171,8 +172,9 @@
           <button class="portfolio__filter" data-filter="travel" role="tab" aria-selected="false" id="filter-travel">Travel</button>
         </div>
 
-        <!-- Portfolio Grid -->
-        <div class="portfolio__grid" id="portfolioGrid" role="tabpanel">
+        <!-- Portfolio Grid Wrapper -->
+        <div class="portfolio__grid-wrapper collapsed" id="portfolioGridWrapper">
+          <div class="portfolio__grid" id="portfolioGrid" role="tabpanel">
 
           <div class="portfolio__item" data-category="event" data-size="large">
             <div class="portfolio__item-img">
@@ -383,6 +385,8 @@
               <h3 class="portfolio__item-title">Every road begins with a decision to leave.</h3>
             </div>
           </div>
+          </div>
+          <div class="portfolio__gradient" id="portfolioGridGradient"></div>
         </div>
         <div class="portfolio__view-all" id="portfolioViewAllContainer" style="display: none; text-align: center; margin-top: 3rem; gap: 1rem; justify-content: center; flex-wrap: wrap;">
           <button class="btn btn--outline" id="portfolioViewAllBtn">

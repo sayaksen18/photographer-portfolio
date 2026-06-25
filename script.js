@@ -13,6 +13,7 @@ const Preloader = {
   init() {
     this.progress = this.el?.querySelector('.preloader__progress');
     if (!this.el) return;
+    document.body.style.overflow = 'hidden';
 
     let loaded = 0;
     const images = document.querySelectorAll('img');
@@ -35,7 +36,7 @@ const Preloader = {
       if (imagesLoaded >= total) {
         clearInterval(fakeProgress);
         this.updateProgress(100);
-        setTimeout(() => this.hide(), 400);
+        setTimeout(() => this.hide(), 600);
       }
     };
 
@@ -232,6 +233,7 @@ const Portfolio = {
 
   init() {
     this.grid = document.getElementById('portfolioGrid');
+    this.wrapper = document.getElementById('portfolioGridWrapper');
     if (!this.grid) return;
 
     // Randomize items in the DOM
@@ -304,20 +306,36 @@ const Portfolio = {
 
   filterItems(category) {
     this.currentFilter = category;
-    let matchCount = 0;
+    let currentArea = 0;
+    const maxArea = 12; // 4 rows * 3 cols
+    let hasHiddenItems = false;
 
     this.items.forEach(item => {
       const itemCategory = item.dataset.category;
-      let shouldShow = category === 'all' || itemCategory === category;
+      let isMatch = category === 'all' || itemCategory === category;
+      let shouldShow = false;
 
-      if (shouldShow) {
-        matchCount++;
-        if (!this.isExpanded && matchCount > this.visibleLimit) {
-          shouldShow = false;
+      if (isMatch) {
+        shouldShow = true; // Always show matching items in the DOM
+        let itemArea = 1;
+        const size = item.dataset.size;
+        if (size === 'large' || size === 'portrait' || size === 'landscape') {
+          itemArea = 2;
+        }
+
+        if (currentArea + itemArea <= maxArea) {
+          currentArea += itemArea;
+        } else {
+          hasHiddenItems = true;
         }
       }
 
       if (shouldShow) {
+        const img = item.querySelector('img');
+        if (img && img.getAttribute('loading') === 'lazy') {
+          img.removeAttribute('loading');
+        }
+
         if (item.classList.contains('hidden')) {
           item.classList.remove('hidden');
           item.style.opacity = '0';
@@ -342,7 +360,7 @@ const Portfolio = {
     });
 
     if (this.viewAllContainer) {
-      if (matchCount > this.visibleLimit) {
+      if (hasHiddenItems || this.isExpanded) {
         this.viewAllContainer.style.display = 'flex';
         if (this.isExpanded) {
           if (this.viewAllBtn) this.viewAllBtn.style.display = 'none';
@@ -353,6 +371,14 @@ const Portfolio = {
         }
       } else {
         this.viewAllContainer.style.display = 'none';
+      }
+    }
+
+    if (this.wrapper) {
+      if (hasHiddenItems && !this.isExpanded) {
+        this.wrapper.classList.add('collapsed');
+      } else {
+        this.wrapper.classList.remove('collapsed');
       }
     }
   },
